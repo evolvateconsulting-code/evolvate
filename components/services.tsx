@@ -5,6 +5,7 @@ import { ServiceMotion } from "@/components/service-motion"
 const services = [
   {
     name: "Business development",
+    anchorId: "business-development",
     layout: "opportunity",
     statement: "See where growth can come from before you commit.",
     description:
@@ -19,6 +20,7 @@ const services = [
   },
   {
     name: "Financial management",
+    anchorId: "financial-management",
     layout: "control",
     statement:
       "Connect budgets, forecasts, and costs to the decisions in front of you.",
@@ -34,6 +36,7 @@ const services = [
   },
   {
     name: "Project management",
+    anchorId: "project-management",
     layout: "delivery",
     statement: "Help keep delivery moving after the strategy conversation.",
     description:
@@ -48,6 +51,7 @@ const services = [
   },
   {
     name: "Project controls",
+    anchorId: "project-controls",
     layout: "control",
     statement:
       "Strengthen cost, schedule, and performance insight on complex work.",
@@ -93,6 +97,7 @@ export function Services() {
           <article
             className={`service-row service-row-${service.layout}`}
             data-service-row
+            id={service.anchorId}
             key={service.name}
           >
             <span

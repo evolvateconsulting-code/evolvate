@@ -30,9 +30,21 @@ export function Hero() {
         </header>
         <div className="hero-content">
           <p className="hero-eyebrow">
-            Business <span aria-hidden="true">·</span> Finance{" "}
-            <span aria-hidden="true">·</span> Projects{" "}
-            <span aria-hidden="true">·</span> Controls
+            <Link href="/#business-development" aria-label="Business development">
+              Business
+            </Link>{" "}
+            <span aria-hidden="true">·</span>{" "}
+            <Link href="/#financial-management" aria-label="Financial management">
+              Finance
+            </Link>{" "}
+            <span aria-hidden="true">·</span>{" "}
+            <Link href="/#project-management" aria-label="Project management">
+              Projects
+            </Link>{" "}
+            <span aria-hidden="true">·</span>{" "}
+            <Link href="/#project-controls" aria-label="Project controls">
+              Controls
+            </Link>
           </p>
           <h1 id="hero-title">
             Cost, schedule, and cash
